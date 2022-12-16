@@ -5,11 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-# mysql_host = '4.236.187.210'
-# mysql_user = 'newuser'
-# mysql_password = 'password'
-# mysql_data = 'db1'
-
 mysql_host = os.getenv("MYSQL_HOSTNAME")
 mysql_user = os.getenv('MYSQL_USERNAME')
 mysql_password = os.getenv('MYSQL_PASSWORD')
