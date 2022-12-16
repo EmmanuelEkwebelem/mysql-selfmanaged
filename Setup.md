@@ -20,6 +20,12 @@
 
 9. Review and Create 
 
+## Connect 
+
+1. Open CMD Terinal 
+
+2. SSH In: ssh -i <private key path> UserAdmin@4.236.187.210
+
 ## Set up OS image
 
 1. Update OS command: sudo apt-get update

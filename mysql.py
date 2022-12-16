@@ -1,13 +1,13 @@
 from sqlalchemy import create_engine
 import pandas as pd
 import os
-from decouple import config
+from dotenv import load_dotenv
+load_dotenv()
 
-
-mysql_host = config('HOST')
-mysql_user = config('USER')
-mysql_password = config('KEY')
-mysql_data = config('DATABASE')
+mysql_host = os.getenv('HOST')
+mysql_user = os.getenv('USER')
+mysql_password = os.getenv('KEY')
+mysql_data = os.getenv('DATABASE')
 
 db = create_engine(f'mysql+pymysql://{mysql_user}:{mysql_password}@{mysql_host}/{mysql_data}')
 
